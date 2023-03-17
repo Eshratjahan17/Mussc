@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div className="navbar mx-10 my-5 ">
+        <div className="navbar px-10 py-5 ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,8 +35,8 @@ const Header = () => {
     <Link to="/" ><img className='w-16' src={logo} alt="MUSSC LOGO"></img></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><Link to="">Home</Link></li>
+    <ul className="menu menu-horizontal px-1 ">
+      <li className=''><Link to="">Home</Link></li>
       <li tabIndex={0}>
         <Link>
          Events
@@ -57,7 +57,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end join_us">
-    <a href="https://forms.gle/6FPtrQrt4PdAkqR48" className="btn btn-accent ">Join us</a>
+    <a href="https://forms.gle/6FPtrQrt4PdAkqR48" className="btn btn-primary ">Join us</a>
   </div>
 </div>
     );
