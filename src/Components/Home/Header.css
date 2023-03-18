@@ -2,3 +2,22 @@
 
     color: white;
 }
+.nav-menu li:hover{
+    background-color: #24214E;
+    border-radius: 10px  ;
+    color: white;
+
+
+}
+.nav-menu a:active{
+    background-color: #24214E;
+    border-radius: 10px  ;
+    color: white;
+
+
+}
+.nav-menu li{
+
+ color: #24214E;
+
+}
