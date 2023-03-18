@@ -1,28 +1,46 @@
 import React from 'react';
-import img4 from '../../../images/img4.png';
+import img4 from '../../../images/dental camp.jpeg';
+import arrowIcon from '../../../images/arrowIcon.png';
 
 const About = () => {
     return (
         <div>
            <div className="hero min-h-screen ">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src={img4} />
-    <div>
-      <h1 className="text-5xl font-bold">About us!</h1>
-      <p className="py-6">A social services club is an organization that is dedicated to providing assistance to people in need within their community. The primary objective of a social services club is to identify and address the social issues that affect individuals, families, and groups in their community.</p>
-
-<p>Social services clubs can provide a range of services, including but not limited to:</p>
+  <div className="hero-content flex-col lg:flex-row-reverse justify-between ">
+    <img className='lg:w-2/5  sm:w-full drop-shadow-xl rounded-lg ' src={img4} />
+    <div className='lg:w-3/5 pr-5 sm:w-full'>
+      <h1 className="text-5xl font-bold text-info">About us!</h1>
+      <p className="py-6">MU Social Services Club is an organization formed by a group of individuals who work together to provide volunteer services and make positive contributions to their community. Members of these clubs often engage in activities such as fundraising, community service projects, and events that promote social causes and help those in need.Objectves of MU Social Services Club:</p>
 <ul>
-    <li><p>Providing food, clothing, and shelter to those in need</p></li>
-    <li>Offering educational and vocational training programs to help people develop new skills and find employment</li>
-    <li>Offering counseling services to individuals and families in need of support</li>
-    <li>Providing medical and healthcare services to those who cannot afford them
-</li>
-    <li>Organizing community outreach programs to address issues such as homelessness, poverty, and social inequality</li>
+  <li className='flex items-center '>
+  <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
+<p>To take an active interest in the cultural, social and the moral welfare of the community.
+</p>
+  </li>
+  <li className='flex items-center '> <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
+<p>To take an active interest in the cultural, social and the moral welfare of the community.
+</p></li>
+  <li className='flex items-center '> <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
+<p>To motivate students to join different kinds of social and helpful activities.
+</p></li>
+  <li className='flex items-center '> <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
+<p>To offer an opportunities for students to contribute to the society.
+</p></li>
+  <li className='flex items-center '> <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
+<p> To help people who need help.
+</p></li>
+  <li className='flex items-center '> <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
+<p> To Encourage service-minded people to serve their community without personal financial 
+reward, & to change efficiency & promote high ethical standards in public works and private 
+endeavors.
+</p></li>
+<li className='flex items-center '> <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
+<p> To learn to respect people & how to fulfill their responsibilities. 
+</p></li>
 </ul>
-<p>The mission of a social services club is to promote the welfare of the community and provide support to those who need it most. They strive to create a positive impact on the lives of people in need, and contribute to making the world a better place.</p>
 
-      <button className="btn btn-primary">Learn More</button>
+
+      <button className="btn btn-primary text-white mt-4">Learn More</button>
     </div>
   </div>
 </div>
