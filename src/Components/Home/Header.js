@@ -30,6 +30,9 @@ const Header = () => {
           >
             <li>
               <Link to="">Home</Link>
+              <li>
+              <Link to="">About Us</Link>
+            </li>
             </li>
             <li  tabIndex={0}>
             <Link>
@@ -97,9 +100,14 @@ const Header = () => {
                 </li>
               </ul>
             </li>
+           
             <li>
-              <Link to="">About Us</Link>
+              <Link to="">Gallary</Link>
             </li>
+            <li>
+              <Link to="">Certification</Link>
+            </li>
+            
             <li>
               <Link to="">Contact Us</Link>
             </li>
@@ -113,6 +121,9 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1 nav-menu ">
           <li className="">
             <Link to="">Home</Link>
+          </li>
+          <li>
+            <Link to="">About Us</Link>
           </li>
           <li  tabIndex={0}>
             <Link>
@@ -180,9 +191,13 @@ const Header = () => {
               </li>
             </ul>
           </li>
+          
           <li>
-            <Link to="">About Us</Link>
-          </li>
+              <Link to="">Gallary</Link>
+            </li>
+            <li>
+              <Link to="">Certification</Link>
+            </li>
           <li>
             <Link to="">Contact Us</Link>
           </li>
