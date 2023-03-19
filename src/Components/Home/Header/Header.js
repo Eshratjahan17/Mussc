@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/MU-logo.png";
+import logo from "../../../images/MU-logo.png";
 import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="navbar px-10 py-5 ">
+    <div className="navbar px-10 py-5  ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden ">
@@ -30,10 +30,11 @@ const Header = () => {
           >
             <li>
               <Link to="">Home</Link>
+              </li>
               <li>
               <Link to="">About Us</Link>
             </li>
-            </li>
+           
             <li  tabIndex={0}>
             <Link>
               Members
@@ -47,7 +48,7 @@ const Header = () => {
                   <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                 </svg>
             </Link>
-            <ul className="p-2 bg-white">
+            <ul className="p-2 bg-white text-accent ">
               <li>
                 <Link>Executive Committee 2019-2020</Link>
               </li>
@@ -206,7 +207,7 @@ const Header = () => {
       <div className="navbar-end join_us">
         <a
           href="https://forms.gle/6FPtrQrt4PdAkqR48"
-          className="btn btn-primary "
+          className="btn bg-white border border-primary hover:bg-primary hover:text-white hover:border-primary "
         >
           Join us
         </a>
