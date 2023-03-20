@@ -1,113 +1,41 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import Event from "./Event";
 
 const Events = () => {
-    return (
-        <div>
-            <h1 className='text-5xl font-bold text-info text-center pb-6'>Our Events</h1>
- <Swiper
+  const [events,setEvents]=useState([]);
+  useEffect(()=>{
+fetch("http://localhost:5000/events")
+.then(res=>res.json())
+.then(data=>{setEvents(data);
+console.log(events)})
+
+  },[]);
+  return (
+    <div className=" py-5 px-10">
+      <h1 className="text-5xl font-bold text-center pb-6 ">
+        Our Events
+      </h1>
+      <Swiper
         spaceBetween={50}
         slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
+        onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
-        <SwiperSlide><div className="card w-96 bg-base-100 shadow-xl image-full">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div></SwiperSlide>
+        
+         
+         {
+          events.map((event)=><Event event={event}></Event>)
+        }
+         
+       
+        
+       
         ...
       </Swiper>
-
-        </div>
-       
-    );
+    </div>
+  );
 };
 
 export default Events;

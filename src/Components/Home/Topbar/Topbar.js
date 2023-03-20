@@ -1,5 +1,5 @@
 import React from "react";
-import {  FaEnvelope, FaFacebook, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {FaEnvelope,FaFacebook,FaLinkedinIn,FaInstagram} from "react-icons/fa";
 
 
 const Topbar = () => {
