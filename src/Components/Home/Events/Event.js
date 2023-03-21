@@ -6,10 +6,10 @@ const Event = ({ event }) => {
   console.log(title,picture);
   return (
    
-    <div className="card w-96  bg-base-100 shadow-xl mt-7">
+    <div className="card w-96  bg-base-100 shadow-xl mt-7 hover:-translate-y-1 hover:scale-110 duration-300">
       
         <img
-        className="h-60 card-img"
+        className="h-60 rounded-t-lg card-img "
           src={picture}
           alt="Shoes"
         />
@@ -17,8 +17,8 @@ const Event = ({ event }) => {
       <div className="card-body">
         <h2 className="card-title">{title}!</h2>
         {/* <p>{about}</p> */}
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">See More</button>
+        <div className="card-actions justify-end ">
+          <button className="btn btn-primary text-white">See More</button>
         </div>
       </div>
     </div>

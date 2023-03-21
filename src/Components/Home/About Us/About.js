@@ -1,5 +1,5 @@
 import React from 'react';
-import img4 from '../../../images/dental camp.jpeg';
+import img1 from '../../../images/img1.png';
 import arrowIcon from '../../../images/arrowIcon.png';
 
 const About = () => {
@@ -7,10 +7,11 @@ const About = () => {
         <div>
            <div className="hero min-h-screen ">
   <div className="hero-content flex-col lg:flex-row-reverse justify-between ">
-    <img className='lg:w-2/5  sm:w-full drop-shadow-xl rounded-lg ' src={img4} />
-    <div className='lg:w-3/5 pr-5 sm:w-full'>
-      <h1 className="text-5xl font-bold text-accent">About us!</h1>
-      <p className="py-6">MU Social Services Club is an organization formed by a group of individuals who work together to provide volunteer services and make positive contributions to their community. Members of these clubs often engage in activities such as fundraising, community service projects, and events that promote social causes and help those in need.Objectves of MU Social Services Club:</p>
+   
+    <div className='lg:w-3/5 pr-5  sm:w-full'>
+      <h1 className="text-5xl font-bold text-accent ">Our Mission!</h1>
+      <div className="divider w-2/5 h-1 bg-primary mx-2 mb-5"></div> 
+      
 <ul>
   <li className='flex items-center '>
   <img className='w-5 h-5 mr-3 ' src={arrowIcon}></img>
@@ -39,6 +40,7 @@ endeavors.
 
       <button className="btn btn-primary text-white mt-4">Learn More</button>
     </div>
+    <img className='lg:w-2/5  sm:w-full drop-shadow-xl rounded-lg ' src={img1} />
   </div>
 </div>
         </div>

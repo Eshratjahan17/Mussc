@@ -5,7 +5,7 @@ import Event from "./Event";
 const Events = () => {
   const [events,setEvents]=useState([]);
   useEffect(()=>{
-fetch("http://localhost:5000/events")
+fetch("https://mussc.onrender.com/events")
 .then(res=>res.json())
 .then(data=>{setEvents(data);
 console.log(events)})
